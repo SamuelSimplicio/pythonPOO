@@ -15,7 +15,7 @@ class Biblioteca:
     def buscar_livro(self, titulo: str): # Busca um livro pelo título
         # Retorna o livro se encontrado, caso contrário retorna None
         for livro in self.livros:
-            if livro.titulo.lower() == titulo.lower(): # Comparação sem case sensitive
+            if livro.titulo.lower() == titulo.lower(): # Comparação sem case sensitive 
                 return livro
         return None
 
