@@ -3,6 +3,10 @@ from biblioteca import Biblioteca
 from livro import Livro
 # Exemplo de uso das classes Livro e Biblioteca
 
+def limpar_tela():
+    import os
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 opcoes = {
     1: "Adicionar Livro",
     2: "Exibir Livros",
@@ -32,7 +36,9 @@ while True:
         livro = Livro(titulo, autor, ano, editora)
         biblioteca.adicionar_livro(livro)
         print(f"Livro '{titulo}' adicionado com sucesso.")
+        limpar_tela()
     elif opcao == 2:
+        limpar_tela()
         biblioteca.exibir_livros()
     elif opcao == 3:
         titulo = input("Título do livro a buscar: ")
@@ -44,6 +50,7 @@ while True:
     elif opcao == 4:
         titulo = input("Título do livro a remover: ")
         biblioteca.remover_livro(titulo)
+        limpar_tela()
     elif opcao == 5:
         print("Saindo...")
         break
