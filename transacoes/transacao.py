@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from categoria import Categoria
+from transacoes.categoria import Categoria
 
 @dataclass
 class Transacao: # representa uma transação financeira

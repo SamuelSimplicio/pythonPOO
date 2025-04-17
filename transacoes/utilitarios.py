@@ -1,5 +1,5 @@
-from categoria import Categoria
-from transacao import Transacao
+from transacoes.categoria import Categoria
+from transacoes.transacao import Transacao
 
 LISTA_CATEGORIAS = []
 LISTA_TRANSACOES = []

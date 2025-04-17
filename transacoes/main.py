@@ -1,4 +1,4 @@
-from utilitarios import (
+from transacoes.utilitarios import (
     cadastrar_categoria,
     cadastrar_transacao,
     saldo_total,
